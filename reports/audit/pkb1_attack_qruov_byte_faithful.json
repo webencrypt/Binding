@@ -1,0 +1,21 @@
+{
+  "artifact": "pkb1_attack_qruov_demo",
+  "source": "tests/pkb1_attack_qruov_demo.c",
+  "parameter_set": "QR-UOV-Ipks-1",
+  "nist_security_category": 1,
+  "q": 127,
+  "v": 156,
+  "m": 54,
+  "L": 3,
+  "pk_canonical_bytes": 24256,
+  "deterministic_trial0_diff_bytes": 24160,
+  "deterministic_trial0_diff_fraction": 0.9960496710125397,
+  "sweep_trials": 100,
+  "sweep_pk_violations_confirmed": 100,
+  "sweep_all_honest_verify_ok": true,
+  "sweep_all_attack_verify_ok": true,
+  "sweep_all_pk_star_differs": true,
+  "rng_base_seed_bytes48": "deterministic: seed[i] = (uint8_t)(17*i+5) for i in [0,47]",
+  "rng_trial_mix": "XOR 32-bit little-endian trial index into rng_seed[0..3] before randombytes_init",
+  "notes": "PKB-1 violation only; not EUF-CMA. Upstream QRUOV_Verify and packers unmodified."
+}

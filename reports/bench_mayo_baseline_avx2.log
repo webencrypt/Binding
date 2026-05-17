@@ -1,0 +1,8 @@
+ MAYO-1 baseline benchmark (N=200 trials)
+========================================
+
+Sizes: pk=1420  sk=24  sig=454
+
+  KeyGen  : median 0.038 ms | mean 0.040 ms | p5 0.037 | p95 0.049
+  Sign    : median 0.111 ms | mean 0.117 ms | p5 0.111 | p95 0.155
+  Open    : median 0.045 ms | mean 0.046 ms | p5 0.045 | p95 0.055

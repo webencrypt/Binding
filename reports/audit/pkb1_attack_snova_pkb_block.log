@@ -1,0 +1,17 @@
+  [0] done, sanity_upstream_accept=1, PKB-H rejects so far=1
+  [10] done, sanity_upstream_accept=11, PKB-H rejects so far=11
+  [20] done, sanity_upstream_accept=21, PKB-H rejects so far=21
+  [30] done, sanity_upstream_accept=31, PKB-H rejects so far=31
+  [40] done, sanity_upstream_accept=41, PKB-H rejects so far=41
+  [50] done, sanity_upstream_accept=51, PKB-H rejects so far=51
+  [60] done, sanity_upstream_accept=61, PKB-H rejects so far=61
+  [70] done, sanity_upstream_accept=71, PKB-H rejects so far=71
+  [80] done, sanity_upstream_accept=81, PKB-H rejects so far=81
+  [90] done, sanity_upstream_accept=91, PKB-H rejects so far=91
+=== SNOVA-PKB-H 100-trial blocking experiment ===
+  Trials                     : 100
+  Sanity (upstream accept    : 100 / 100   (must be 100)
+  pk^star  -> upstream verify ACCEPT)
+  PKB-H verifier rejected     : 100 / 100   (target: 100)
+  PKB-H verifier accepted     : 0 / 100
+  Byte distance pk vs pk^star: min=990, mean=996, max=1000 (/ 1016)

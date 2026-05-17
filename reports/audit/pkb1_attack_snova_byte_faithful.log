@@ -1,0 +1,11 @@
+=== SNOVA-24_5_16_4 byte-faithful PKB-1 witness ===
+  Parameter set     : v=24 o=5 q=16 l=4 r=4 (NIST L1)
+  Canonical pk size : 1016 bytes
+  NUMGF_PK          : 2000 GF(16) elements
+  Kernel-search K   : 200 random P22 samples
+  ΔP22 nonzero GF   : 1879 / 2000
+  Byte distance     : 997 / 1016 (= 98.1%)
+  pk* != pk         : yes
+  Upstream verify   : ACCEPT (PKB-1 witnessed)
+    seed bytes flipped (must be 0): 0 / 16
+    P22  bytes flipped            : 997 / 1000

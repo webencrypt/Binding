@@ -1,0 +1,278 @@
+{
+  "suite_version": "qruov-fast-v1",
+  "family": "qr_uov_like",
+  "tier": "qruov-toy",
+  "n_seeds": 200,
+  "alpha": 0.001,
+  "params": {
+    "n": 12,
+    "m": 8,
+    "q": 31,
+    "n_v": 8,
+    "n_o": 4,
+    "d_g": 2,
+    "nL_v": 4,
+    "nL_o": 2,
+    "k_anchor": 3
+  },
+  "targets": {
+    "qruov_baseline": {
+      "target": "qruov_baseline",
+      "n_seeds": 200,
+      "build_seconds": 3.4925146102905273,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 200,
+        "n": 12,
+        "m": 8,
+        "cols": 78,
+        "rank_min": 8,
+        "rank_max": 8,
+        "rank_mean": 8.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "8": 200
+        },
+        "seconds": 0.12548351287841797
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 200,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 10,
+        "min_rank_max": 12,
+        "min_rank_mean": 11.69,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 34.72590923309326
+      },
+      "P3": {
+        "name": "P3",
+        "description": "Structural fingerprint vs anchor: 2x2 chi-square contingency over (anchor_byte, coord) pairs",
+        "n_seeds": 200,
+        "fingerprint_dim": 62,
+        "anchor_bytes": 3,
+        "n_tests": 186,
+        "p_min": 0.001119778617292166,
+        "p_min_byte_coord": [
+          0,
+          10
+        ],
+        "chi2_max": 10.618235279638462,
+        "bonferroni_p": 0.20827882281634288,
+        "raw_significant_count": 0,
+        "raw_threshold": 0.001,
+        "seconds": 0.03841972351074219
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 200,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.1724827159637918e-12,
+        "ratio_to_random": 0.0,
+        "seconds": 0.6203608512878418
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 200,
+        "pool_chi2": 29.954951923076923,
+        "pool_pvalue": 0.467962699351012,
+        "lindeg_min_pvalue": 0.0026414804280545877,
+        "lindeg_min_seed": 146,
+        "anchor_corr_chi2": 5.3811936581205355,
+        "anchor_corr_pvalue": 0.799893751652182,
+        "seconds": 0.1457352638244629
+      }
+    },
+    "qruov_synth_sparse_g": {
+      "target": "qruov_synth_sparse_g",
+      "n_seeds": 200,
+      "build_seconds": 0.4768078327178955,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 200,
+        "n": 12,
+        "m": 8,
+        "cols": 78,
+        "rank_min": 8,
+        "rank_max": 8,
+        "rank_mean": 8.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "8": 200
+        },
+        "seconds": 0.1309502124786377
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 200,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 10,
+        "min_rank_max": 12,
+        "min_rank_mean": 11.235,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 35.424739599227905
+      },
+      "P3": {
+        "name": "P3",
+        "description": "Structural fingerprint vs anchor: 2x2 chi-square contingency over (anchor_byte, coord) pairs",
+        "n_seeds": 200,
+        "fingerprint_dim": 62,
+        "anchor_bytes": 3,
+        "n_tests": 186,
+        "p_min": 0.010873731105517056,
+        "p_min_byte_coord": [
+          1,
+          58
+        ],
+        "chi2_max": 6.485837253528175,
+        "bonferroni_p": 1.0,
+        "raw_significant_count": 0,
+        "raw_threshold": 0.001,
+        "seconds": 0.037943363189697266
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 200,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.1724827159637918e-12,
+        "ratio_to_random": 0.0,
+        "seconds": 0.6349143981933594
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 200,
+        "pool_chi2": 28.33689102564102,
+        "pool_pvalue": 0.5525893092214517,
+        "lindeg_min_pvalue": 0.0026414804280545994,
+        "lindeg_min_seed": 100,
+        "anchor_corr_chi2": 10.536599751612318,
+        "anchor_corr_pvalue": 0.3088134354328256,
+        "seconds": 0.14412903785705566
+      }
+    },
+    "qruov_synth_pinned_g": {
+      "target": "qruov_synth_pinned_g",
+      "n_seeds": 200,
+      "build_seconds": 0.583449125289917,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 200,
+        "n": 12,
+        "m": 8,
+        "cols": 78,
+        "rank_min": 8,
+        "rank_max": 8,
+        "rank_mean": 8.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "8": 200
+        },
+        "seconds": 0.13281941413879395
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 200,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 10,
+        "min_rank_max": 11,
+        "min_rank_mean": 10.995,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 35.205039501190186
+      },
+      "P3": {
+        "name": "P3",
+        "description": "Structural fingerprint vs anchor: 2x2 chi-square contingency over (anchor_byte, coord) pairs",
+        "n_seeds": 200,
+        "fingerprint_dim": 62,
+        "anchor_bytes": 3,
+        "n_tests": 186,
+        "p_min": 1.554254656653571e-44,
+        "p_min_byte_coord": [
+          0,
+          14
+        ],
+        "chi2_max": 196.00569275405107,
+        "bonferroni_p": 2.8909136613756424e-42,
+        "raw_significant_count": 4,
+        "raw_threshold": 0.001,
+        "seconds": 0.03810000419616699
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 200,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.1724827159637918e-12,
+        "ratio_to_random": 0.0,
+        "seconds": 0.6257092952728271
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 200,
+        "pool_chi2": 24.771891025641022,
+        "pool_pvalue": 0.7360399273002526,
+        "lindeg_min_pvalue": 0.022702941638167416,
+        "lindeg_min_seed": 131,
+        "anchor_corr_chi2": 600.0,
+        "anchor_corr_pvalue": 2.0941845519358376e-123,
+        "seconds": 0.14676117897033691
+      }
+    }
+  },
+  "decisions": {
+    "qruov_baseline": {
+      "P1_rank_mean": 8.0,
+      "P2_median_rank_mean": 12.0,
+      "P3_bonferroni_p": 0.20827882281634288,
+      "P5_pool_pvalue": 0.467962699351012,
+      "P5_anchor_corr_pvalue": 0.799893751652182,
+      "p3_significant_at_FWER": false,
+      "anchor_corr_significant_at_FWER": false
+    },
+    "qruov_synth_sparse_g": {
+      "P1_rank_mean": 8.0,
+      "P2_median_rank_mean": 12.0,
+      "P3_bonferroni_p": 1.0,
+      "P5_pool_pvalue": 0.5525893092214517,
+      "P5_anchor_corr_pvalue": 0.3088134354328256,
+      "p3_significant_at_FWER": false,
+      "anchor_corr_significant_at_FWER": false
+    },
+    "qruov_synth_pinned_g": {
+      "P1_rank_mean": 8.0,
+      "P2_median_rank_mean": 12.0,
+      "P3_bonferroni_p": 2.8909136613756424e-42,
+      "P5_pool_pvalue": 0.7360399273002526,
+      "P5_anchor_corr_pvalue": 2.0941845519358376e-123,
+      "p3_significant_at_FWER": true,
+      "anchor_corr_significant_at_FWER": true
+    }
+  },
+  "bonferroni_threshold": 6.666666666666667e-05
+}

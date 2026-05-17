@@ -1,0 +1,8 @@
+ MAYO-PKB-1 benchmark (N=200 trials)
+========================================
+
+Sizes: pk=1420  sk=64  sig=470  d_pk=32  tau=16
+
+  KeyGen  : median 0.039 ms | mean 0.041 ms | p5 0.038 | p95 0.051
+  Sign    : median 0.112 ms | mean 0.116 ms | p5 0.112 | p95 0.142
+  Open    : median 0.049 ms | mean 0.050 ms | p5 0.049 | p95 0.057

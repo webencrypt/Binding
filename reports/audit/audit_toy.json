@@ -1,0 +1,237 @@
+{
+  "suite_version": "fast-v2",
+  "tier": "toy",
+  "n_seeds": 30,
+  "alpha": 0.001,
+  "params": {
+    "n": 12,
+    "m": 4,
+    "q": 31,
+    "n_v": 8,
+    "n_o": 4,
+    "k_anchor": 2
+  },
+  "targets": {
+    "mayo_baseline": {
+      "target": "mayo_baseline",
+      "n_seeds": 30,
+      "build_seconds": 0.14066147804260254,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 30,
+        "n": 12,
+        "m": 4,
+        "cols": 78,
+        "rank_min": 4,
+        "rank_max": 4,
+        "rank_mean": 4.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "4": 30
+        },
+        "seconds": 0.010514497756958008
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 30,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 10,
+        "min_rank_max": 11,
+        "min_rank_mean": 10.966666666666667,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 5.533291816711426
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 30,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.0828124103295972e-06,
+        "ratio_to_random": 0.0,
+        "seconds": 0.09960222244262695
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 30,
+        "pool_chi2": 20.6,
+        "pool_pvalue": 0.8999776694220338,
+        "lindeg_min_pvalue": 0.07750202317093015,
+        "lindeg_min_seed": 12,
+        "anchor_corr_chi2": null,
+        "anchor_corr_pvalue": null,
+        "seconds": 0.01998424530029297
+      }
+    },
+    "anchored_mayo": {
+      "target": "anchored_mayo",
+      "n_seeds": 30,
+      "build_seconds": 0.04182553291320801,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 30,
+        "n": 12,
+        "m": 4,
+        "cols": 78,
+        "rank_min": 4,
+        "rank_max": 4,
+        "rank_mean": 4.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "4": 30
+        },
+        "seconds": 0.01046299934387207
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 30,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 10,
+        "min_rank_max": 11,
+        "min_rank_mean": 10.966666666666667,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 5.515109539031982
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 30,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.0828124103295972e-06,
+        "ratio_to_random": 0.0,
+        "seconds": 0.10019254684448242
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 30,
+        "pool_chi2": 20.6,
+        "pool_pvalue": 0.8999776694220338,
+        "lindeg_min_pvalue": 0.07750202317093015,
+        "lindeg_min_seed": 12,
+        "anchor_corr_chi2": 17.50637755102041,
+        "anchor_corr_pvalue": 0.04135202910921082,
+        "seconds": 0.019715309143066406
+      }
+    },
+    "synthetic_alg_anchor": {
+      "target": "synthetic_alg_anchor",
+      "n_seeds": 30,
+      "build_seconds": 0.04286313056945801,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 30,
+        "n": 12,
+        "m": 4,
+        "cols": 78,
+        "rank_min": 4,
+        "rank_max": 4,
+        "rank_mean": 4.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "4": 30
+        },
+        "seconds": 0.010181427001953125
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 30,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 11,
+        "min_rank_max": 11,
+        "min_rank_mean": 11.0,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 5.553990125656128
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 30,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.0828124103295972e-06,
+        "ratio_to_random": 0.0,
+        "seconds": 0.09841775894165039
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 30,
+        "pool_chi2": 21.520726495726496,
+        "pool_pvalue": 0.870902195481685,
+        "lindeg_min_pvalue": 0.018182595425968482,
+        "lindeg_min_seed": 28,
+        "anchor_corr_chi2": 90.00000000000001,
+        "anchor_corr_pvalue": 1.6280704719656153e-15,
+        "seconds": 0.019041061401367188
+      }
+    }
+  },
+  "p6": {
+    "anchored_mayo": {
+      "name": "P6",
+      "description": "Toy PKB-1 violation rate: anchored MAYO (binding) vs unbound MQ",
+      "mode": "anchored_mayo",
+      "n_dpk_bits": 6,
+      "n_tau_bits": 4,
+      "n_pk_samples": 4096,
+      "n_query_per_pk": 256,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "seconds": 2.451944589614868
+    },
+    "unbound_mq": {
+      "name": "P6",
+      "description": "Toy PKB-1 violation rate: anchored MAYO (binding) vs unbound MQ",
+      "mode": "unbound",
+      "n_dpk_bits": 6,
+      "n_tau_bits": 4,
+      "n_pk_samples": 4096,
+      "n_query_per_pk": 256,
+      "violations": 4096,
+      "violation_rate": 1.0,
+      "seconds": 0.06238961219787598
+    }
+  },
+  "decisions": {
+    "mayo_baseline": {
+      "P1_rank_mean": 4.0,
+      "P5_pool_pvalue": 0.8999776694220338,
+      "P5_anchor_corr_pvalue": null,
+      "anchor_corr_significant_at_FWER": false
+    },
+    "anchored_mayo": {
+      "P1_rank_mean": 4.0,
+      "P5_pool_pvalue": 0.8999776694220338,
+      "P5_anchor_corr_pvalue": 0.04135202910921082,
+      "anchor_corr_significant_at_FWER": false
+    },
+    "synthetic_alg_anchor": {
+      "P1_rank_mean": 4.0,
+      "P5_pool_pvalue": 0.870902195481685,
+      "P5_anchor_corr_pvalue": 1.6280704719656153e-15,
+      "anchor_corr_significant_at_FWER": true
+    }
+  },
+  "bonferroni_threshold": 7.142857142857143e-05
+}

@@ -1,0 +1,287 @@
+{
+  "suite_version": "fast-v3",
+  "tier": "snova-toy",
+  "family": "snova-like",
+  "n_seeds": 100,
+  "alpha": 0.001,
+  "params": {
+    "n": 12,
+    "m": 4,
+    "q": 31,
+    "nb_v": 4,
+    "nb_o": 2,
+    "block_size": 2,
+    "k_anchor": 2
+  },
+  "targets": {
+    "snova_baseline": {
+      "target": "snova_baseline",
+      "n_seeds": 100,
+      "build_seconds": 0.2546226978302002,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 100,
+        "n": 12,
+        "m": 4,
+        "cols": 78,
+        "rank_min": 4,
+        "rank_max": 4,
+        "rank_mean": 4.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "4": 100
+        },
+        "seconds": 0.03423571586608887
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 100,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 11,
+        "min_rank_max": 11,
+        "min_rank_mean": 11.0,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 18.025460958480835
+      },
+      "P3": {
+        "name": "P3",
+        "n_seeds": 100,
+        "anchor_required": true,
+        "seconds": 8.344650268554688e-06
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 100,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.0828124103295972e-06,
+        "ratio_to_random": 0.0,
+        "seconds": 0.33123111724853516
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 100,
+        "pool_chi2": 15772.831474358976,
+        "pool_pvalue": 0.0,
+        "lindeg_min_pvalue": 0.0034081416021926754,
+        "lindeg_min_seed": 32,
+        "anchor_corr_chi2": null,
+        "anchor_corr_pvalue": null,
+        "seconds": 0.06207132339477539
+      }
+    },
+    "snova_anchored": {
+      "target": "snova_anchored",
+      "n_seeds": 100,
+      "build_seconds": 0.16405534744262695,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 100,
+        "n": 12,
+        "m": 4,
+        "cols": 78,
+        "rank_min": 4,
+        "rank_max": 4,
+        "rank_mean": 4.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "4": 100
+        },
+        "seconds": 0.03450942039489746
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 100,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 11,
+        "min_rank_max": 11,
+        "min_rank_mean": 11.0,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 18.09207010269165
+      },
+      "P3": {
+        "name": "P3",
+        "description": "Structural fingerprint vs anchor: 2x2 chi-square contingency over (anchor_byte, coord) pairs",
+        "n_seeds": 100,
+        "fingerprint_dim": 62,
+        "anchor_bytes": 2,
+        "n_tests": 124,
+        "p_min": 0.008445364162071492,
+        "p_min_byte_coord": [
+          1,
+          46
+        ],
+        "chi2_max": 6.936511978528787,
+        "bonferroni_p": 1.0,
+        "raw_significant_count": 0,
+        "raw_threshold": 0.001,
+        "seconds": 0.02864813804626465
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 100,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.0828124103295972e-06,
+        "ratio_to_random": 0.0,
+        "seconds": 0.32520294189453125
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 100,
+        "pool_chi2": 15772.831474358976,
+        "pool_pvalue": 0.0,
+        "lindeg_min_pvalue": 0.0034081416021926754,
+        "lindeg_min_seed": 32,
+        "anchor_corr_chi2": 5.168689428087925,
+        "anchor_corr_pvalue": 0.819362148522754,
+        "seconds": 0.06170201301574707
+      }
+    },
+    "snova_synthetic": {
+      "target": "snova_synthetic",
+      "n_seeds": 100,
+      "build_seconds": 0.1662437915802002,
+      "P1": {
+        "name": "P1",
+        "description": "Linearised public-map rank (D = 2 Macaulay)",
+        "n_seeds": 100,
+        "n": 12,
+        "m": 4,
+        "cols": 78,
+        "rank_min": 4,
+        "rank_max": 4,
+        "rank_mean": 4.0,
+        "rank_std": 0.0,
+        "rank_histogram": {
+          "4": 100
+        },
+        "seconds": 0.0347139835357666
+      },
+      "P2": {
+        "name": "P2",
+        "description": "MinRank distinguisher: rank distribution of random GF(q)-linear combinations",
+        "n_seeds": 100,
+        "n_combos_per_seed": 200,
+        "min_rank_min": 10,
+        "min_rank_max": 11,
+        "min_rank_mean": 10.99,
+        "median_rank_min": 12,
+        "median_rank_max": 12,
+        "median_rank_mean": 12.0,
+        "seconds": 18.156078338623047
+      },
+      "P3": {
+        "name": "P3",
+        "description": "Structural fingerprint vs anchor: 2x2 chi-square contingency over (anchor_byte, coord) pairs",
+        "n_seeds": 100,
+        "fingerprint_dim": 62,
+        "anchor_bytes": 2,
+        "n_tests": 124,
+        "p_min": 1.1258564622753109e-22,
+        "p_min_byte_coord": [
+          0,
+          14
+        ],
+        "chi2_max": 96.04,
+        "bonferroni_p": 1.3960620132213854e-20,
+        "raw_significant_count": 12,
+        "raw_threshold": 0.001,
+        "seconds": 0.02685546875
+      },
+      "P4": {
+        "name": "P4",
+        "description": "Oil-space recovery heuristic: probability uniform v vanishes on all P_i",
+        "n_seeds": 100,
+        "n_trials_per_seed": 100,
+        "rate_min": 0.0,
+        "rate_max": 0.0,
+        "rate_mean": 0.0,
+        "expected_random": 1.0828124103295972e-06,
+        "ratio_to_random": 0.0,
+        "seconds": 0.33208322525024414
+      },
+      "P5": {
+        "name": "P5",
+        "description": "Statistical battery: chi-square pool, low-deg linear test, anchor correlation",
+        "n_seeds": 100,
+        "pool_chi2": 16013.502756410253,
+        "pool_pvalue": 0.0,
+        "lindeg_min_pvalue": 0.02270294163816752,
+        "lindeg_min_seed": 30,
+        "anchor_corr_chi2": 300.0,
+        "anchor_corr_pvalue": 2.6102773472069844e-59,
+        "seconds": 0.06214499473571777
+      }
+    }
+  },
+  "p6": {
+    "anchored_mayo": {
+      "name": "P6",
+      "description": "Toy PKB-1 violation rate: anchored MAYO (binding) vs unbound MQ",
+      "mode": "anchored_mayo",
+      "n_dpk_bits": 6,
+      "n_tau_bits": 4,
+      "n_pk_samples": 4096,
+      "n_query_per_pk": 256,
+      "violations": 0,
+      "violation_rate": 0.0,
+      "seconds": 2.3809032440185547
+    },
+    "unbound_mq": {
+      "name": "P6",
+      "description": "Toy PKB-1 violation rate: anchored MAYO (binding) vs unbound MQ",
+      "mode": "unbound",
+      "n_dpk_bits": 6,
+      "n_tau_bits": 4,
+      "n_pk_samples": 4096,
+      "n_query_per_pk": 256,
+      "violations": 4096,
+      "violation_rate": 1.0,
+      "seconds": 0.06167197227478027
+    }
+  },
+  "decisions": {
+    "snova_baseline": {
+      "P1_rank_mean": 4.0,
+      "P3_bonferroni_p": null,
+      "P5_pool_pvalue": 0.0,
+      "P5_anchor_corr_pvalue": null,
+      "anchor_corr_significant_at_FWER": false,
+      "p3_significant_at_FWER": false
+    },
+    "snova_anchored": {
+      "P1_rank_mean": 4.0,
+      "P3_bonferroni_p": 1.0,
+      "P5_pool_pvalue": 0.0,
+      "P5_anchor_corr_pvalue": 0.819362148522754,
+      "anchor_corr_significant_at_FWER": false,
+      "p3_significant_at_FWER": false
+    },
+    "snova_synthetic": {
+      "P1_rank_mean": 4.0,
+      "P3_bonferroni_p": 1.3960620132213854e-20,
+      "P5_pool_pvalue": 0.0,
+      "P5_anchor_corr_pvalue": 2.6102773472069844e-59,
+      "anchor_corr_significant_at_FWER": true,
+      "p3_significant_at_FWER": true
+    }
+  },
+  "bonferroni_threshold": 5.882352941176471e-05
+}

@@ -1,0 +1,14 @@
+=========================================================
+ PKB-H blocks byte-faithful PKB-1 attack on QR-UOV-Ipks-1
+ Parameters: q=127, v=156, m=54, L=3   trials = 100
+=========================================================
+
+--- RESULTS over 100 trials (0 degenerate, 100 valid) ---
+  Upstream PKB-1 attack succeeded   : 100 / 100  (target: 100)
+  pk_star != pk (bytewise)          : 100 / 100
+  d_pk_star != d_pk_honest          : 100 / 100
+  PKB-H Open rejected pk_star       : 100 / 100  (target: 100)
+  Example Hamming distance pk vs pk*: 24150 / 24256 bytes
+
+RESULT: PKB-H blocks the byte-faithful PKB-1 attack in
+        100 / 100 valid trials (100%).
